@@ -1,5 +1,1134 @@
-.info_Bold_Description {
-    color: #ffffff;
+BODY
+{
     FONT-FAMILY: Arial, Helvetica, sans-serif;
     FONT-SIZE: 10pt;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal;
+    MARGIN-BOTTOM: -1px;
+    MARGIN-TOP: -1px;
+} 
+/*
+use_transparent is a default css command only not to be changed by customised css files.
+*/
+.use_transparent{
+	background: transparent !important;
+}
+
+H1
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 14pt;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold;
+    MARGIN-BOTTOM: -1px
+}
+H2
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold;
+    MARGIN-BOTTOM: -1px
+}
+H3
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal;
+    MARGIN-BOTTOM: -1px;
+    MARGIN-TOP: -1px
+}
+
+TD
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt
+}
+INPUT
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 8pt
+}
+SELECT
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 8pt
+}
+P
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt
+}
+SMALL
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 8pt
+}
+BUTTON
+{
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 9pt;
+    MARGIN-BOTTOM: 1px;
+    MARGIN-TOP: 1px;
+}
+.keypadBtn{
+	height: 40px;
+	width: 95px;	
+    overflow: hidden; 
+	color: #6E6E70;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;    
+	border-radius: 5px;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 0px;
+	background: -webkit-linear-gradient(#C5C5C7 , #FEFEFE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#C5C5C7, #FEFEFE); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#C5C5C7, #FEFEFE); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#C5C5C7, #FEFEFE); /* Standard syntax */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#C5C5C7', EndColorStr='#FEFEFE'); /*IE 8-9 */
+	outline:0;
+}
+.keypadBtn:active{
+}
+
+.keypadBtn:hover:enabled{
+}
+
+.keypadBtn:disabled{
+	border-color:#C9C9CA;
+    background: -webkit-linear-gradient(bottom, rgba(168,168,170,1), rgba(168,168,170,0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(168,168,170,1), rgba(168,168,170,0.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(168,168,170,1), rgba(168,168,170,0.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(168,168,170,1), rgba(168,168,170,0.2)); /* Standard syntax (must be last) */
+}
+
+
+/* Number keypad */
+.numKeypadBtn{
+	height: 30px;
+	width: 70px;	
+    overflow: hidden; 
+
+	color: #6E6E70;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;    
+
+	border-radius: 5px;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 0px;
+
+
+	background: -webkit-linear-gradient(#C5C5C7 , #FEFEFE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#C5C5C7, #FEFEFE); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#C5C5C7, #FEFEFE); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#C5C5C7, #FEFEFE); /* Standard syntax */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#C5C5C7', EndColorStr='#FEFEFE'); /*IE 8-9 */
+	outline:0;
+
+}
+.numKeypadBtn::first-letter {
+    font-size: 200%;
+   	float: left;
+}
+.numKeypadBtn:disabled{
+
+}
+.numKeypadBtn:active{
+	background: #58595A;
+	color: #FFFFFF;
+}
+
+.numKeypadBtn:hover{
+}
+IMG[class*='answerBtnIcon-']{
+}
+
+table.ListTable{
+	border-spacing: 2px;
+	border-collapse: separate;
+
+}
+tr.ListHeading{
+	background-color:black;
+	color:white;
+}
+td.WidgetTitle{
+	font-size:12px;
+	color:white;
+	font-weight : bold;
+}
+.CallHighlightColour{
+	background-color: #FFFF00;
+    border-radius: 60px;
+    padding: 0px; 
+    width: 70px;
+    height: 68px;   
+}
+
+.PodView_Empty{
+	background-color: #FFFFFF;
+}
+.operatorState_Unknown{
+	background-color: #FFFFFF;
+}
+.operatorState_Idle{
+	background-color: #DDFFDD;
+}
+.operatorState_Outdiall_Inactive{
+	background-color: #00FF00;
+}
+.operatorState_Ringing{
+	background-color: #FF0000;
+}
+.operatorState_Outbound_Ringing{
+	background-color: #FF8080;
+}
+.operatorState_Break{
+	background-color: #FFFF7C;
+
+}
+.operatorState_Idle_With_Pending_Break{
+	background-color: #FFFF7C;
+}
+.operatorState_Busy_With_Message{
+	background-color: #FFFF7C;
+}
+
+.operatorState_Outdialler_Other{
+	background-color: #FFFF7C;
+}
+.operatorState_InCall{
+	background-color: #D0D0FF;
+}
+.operatorState_In_Outbound_Call{
+	background-color: #87CEFA;
+}
+.operatorState_Wrapup{
+	background-color: #FFFF7C;
+}
+.operatorState_Extended_Wrapup{
+	background-color: #FFFF7C;
+}
+.operatorState_Outdial_Wrapup{
+	background-color: #FFFF7C;	
+}
+.operatorState_Wrap_With_Pending_Break{
+	background-color: #FFFF7C;	
+}
+
+.operatorState_No_Answer{
+	background-color: #FFFFFF;
+}
+.operatorState_Unreachable{
+	background-color: #FFD0D0;
+}
+.operatorState_Engaged{
+	background-color: #FFD0D0;
+}
+.operatorState_BRB{
+	background-color: #FF80FF;
+}
+.operatorState_Require_Assistance{
+	background-color: #FF00FF;
+}
+
+/* if statement is carried out in VB here */
+.operatorState_Automatic_Logout{
+	background-color: #FFD0D0;
+}
+.operatorState_Logged_Out{
+	background-color: #C0C0C0;
+}
+
+.operatorState_AWOL{
+	background-color: #FFD0D0;
+}
+.operatorState_Other{
+	background-color: #FFD0D0;
+}
+
+
+.operatorList_LoggedIn_Image{
+	background-image: url('/td/i/clients.png');
+}
+
+.operatorList_LoggedOut_Image{
+	background-image: url('/td/i/customer1.png');
+}	
+
+.info_Description{
+	color: #666666;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+}
+
+.info_Content{
+	color:#666666;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+
+}
+
+.info_Bold_Description{
+	color:#FFFFFF;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+}
+
+.info_Bold_Content{
+	color: #666666;
+	font-weight:bold;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    font-weight:bold;
+}
+
+.Operator_InOut_Green{
+	color: #3B8000;
+}
+
+.Operator_InOut_Red{
+	color: #FF0000;
+}
+
+.Operator_InOut_Blue{
+	color: #0000FF;
+}
+
+
+.operatorState_Timer{
+	font-size: smaller;
+}
+
+.operatorState_Pendingstate{
+	font-size: smaller;
+}
+
+.Basic_Theme_Header{
+	background: -webkit-linear-gradient(#BFBFBF, #222222); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#BFBFBF, #222222); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#BFBFBF, #222222); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#BFBFBF, #222222); /* Standard syntax */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#BFBFBF', EndColorStr='#222222'); /*IE 8-9 */
+	width: 100%;	
+	height: 27px;
+}
+
+
+.widget_load_error{
+	background-color: orange;
+	text-align: center;
+	
+}
+
+.xx-small{
+	font-size:xx-small;
+}
+
+.medium{
+	font-size:medium;
+}
+
+.large{
+	font-size: large;
+}
+
+.x-larger{
+	font-size: x-large;
+}
+
+.xx-large{
+	font-size: xx-large;
+}
+
+#centralIcon{
+}
+
+#rightIcon{
+	
+}
+
+.CallInfoText{
+    FONT-SIZE: 10pt;
+	font-family: arial;
+	color: #5E585A;
+}
+.CallInfoHeading{
+    FONT-SIZE: 10pt;
+	font-family: arial;
+	color: #818284;
+	text-align: right;
+}
+.CallInfoLight{
+	font-size: 16px;
+	font-family: arial;
+	color: #FFFFFF;
+}
+.CallInfoDark{
+	font-size: 14px;
+	font-family: arial;
+	color: #231F20;
+}
+.RecordingStatus{
+	font-size: 8px;
+	font-family: arial;
+	color: #818284;
+}
+
+.subtableheader{
+	color: #FFFFFF;
+}
+
+#CallBtn{
+/* this is the call button from the operator management widget */
+	height:19px; 
+	padding:0px;
+}
+
+.designModeIcons_InTabs{
+	position: relative;
+	top: 10px;
+}
+
+.designMode_MoveIcon{
+	background-image: url('/td/cc4web-resources/images/cc4webv2/move.png');
+	height: 16px;
+	width: 16px;
+}
+.designMode_ResizeIcon{
+	background-image: url('/td/cc4web-resources/images/cc4webv2/size.png');
+	height: 16px;
+	width: 16px;
+
+}
+.designMode_PropertiesIcon{
+	background-image:  url('/td/cc4web-resources/images/cc4webv2/properties.png');
+	height: 16px;
+	width: 16px;
+
+}
+.designMode_ZoomOutIcon{
+	background-image:  url('/td/cc4web-resources/images/cc4webv2/zoom_out.png');
+	height: 16px;
+	width: 16px;
+
+}
+.designMode_ZoomInIcon{
+	background-image:  url('/td/cc4web-resources/images/cc4webv2/zoom_in.png');
+	height: 16px;
+	width: 16px;
+
+}
+.designMode_RemoveWidgetIcon{
+	background-image:  url('/td/cc4web-resources/images/cc4webv2/remove.png');
+	height: 16px;
+	width: 16px;
+
+}
+
+.current_call_icon_amber{
+	background-image: none;
+	background-image: url('/td/cc4web-resources/images/call_states/central_icon_amber.png') !important;
+}
+.current_call_right_icon_amber{
+	background-image: url('/td/cc4web-resources/images/call_states/right_icon_amber.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	height: 60px;
+	width: 60px;
+	
+}
+
+
+.current_call_icon_grey{
+	background-image: none;
+	background-image: url('/td/cc4web-resources/images/call_states/central_icon_grey.png') !important;
+}
+.current_call_right_icon_grey{
+	background-image: url('/td/cc4web-resources/images/call_states/right_icon_grey.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	height: 60px;
+	width: 60px;
+	
+}
+
+
+.current_call_icon_green{
+	background-image: none;
+	background-image: url('/td/cc4web-resources/images/call_states/central_icon_green.png') !important;
+}
+.current_call_right_icon_green{
+	background-image: url('/td/cc4web-resources/images/call_states/right_icon_green.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	height: 60px;
+	width: 60px;
+}
+
+
+
+.current_call_icon_blue{
+	background-image: none;
+	background-image: url('/td/cc4web-resources/images/call_states/central_icon_blue_hold.png') !important;
+}
+.current_call_right_icon_blue{
+	background-image: url('/td/cc4web-resources/images/call_states/right_Icon_blue_hold.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	height: 60px;
+	width: 60px;
+	
+}
+
+
+.current_call_icon_red{
+	background-image: none;
+	background-image: url('/td/cc4web-resources/images/call_states/central_icon_red.png') !important;
+}
+.current_call_right_icon_red{
+	background-image: url('/td/cc4web-resources/images/call_states/right_icon_red.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	height: 60px;
+	width: 60px;
+	
+}
+
+
+.current_call_icon_amber_PhoneYou{
+	background-image: url('/td/cc4web-resources/images/call_states/Central_Icon_amber_phoneyou.png');
+	
+}
+.current_call_icon_green_PhoneYou{
+	background-image: url('/td/cc4web-resources/images/call_states/Central_Icon_dullgreen_phoneyou.png');
+
+}
+
+.currentcall_record-disabled{
+	background-image: url('/td/cc4web-resources/images/buttons/recordingBlank_disabled.png');
+	
+}
+
+.currentcall_record-suspend{
+	background-image: url('/td/cc4web-resources/images/buttons/cmdSuspendRecording.png');
+	height: 70px;
+	width: 70px;
+	
+}
+
+.currentcall_record-enabled{
+	background-image: url('/td/cc4web-resources/images/buttons/cmdRecord.png');
+	height: 70px;
+	width: 70px;
+	
+}
+
+.call-count_success_value{
+	color: green !important;
+}
+.call-count_failed_value{
+	color: red !important;
+}
+.hunting_for_a_call{
+ background-color: #FFD58B;
+}
+.Call_In_Progress{
+ background-color: #E0FFE0;
+}
+.Call_Queued{
+ background-color: #FFFFFF;
+}
+
+.ccGrey{
+	color: gray;
+}
+
+.opcreditcard-cclogos{
+	background-image: url('/td/i/CCLogos.jpg');
+	height: 77px;
+	width: 191px;
+}
+
+.opGroupMembership-layout_style{
+	color: #000000;
+}
+
+.WidgetTabStrip{
+	position: relative;
+    left: -38px;
+    top: -18px;
+}
+
+.WidgetTabStyle{
+    color: white;
+    cursor: pointer;
+    top: 2px;
+    position: relative;
+    list-style: none;
+    float: left;
+    padding: 10px;
+    padding: 2px 25px 2px 5px;
+    margin: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 75px;
+    height: 18px;
+    background-color: #848484;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px; 
+    border-radius: 3px 3px 0px 0px;
+    border: 2px solid black;
+    border-style: outset;
+    border-bottom: 0px;
+    border-color: #666666;
+    border-right-color: #000000;
+    z-index: 4;
+    width: inherit;	/*
+	box-shadow: 1px -1px 2px #888888;    
+	*/
+}
+
+.widget_Tabs_content_Box{
+	border: #808080 2px solid;
+	background-color: #FFFFFF;
+    border-radius: 5px 5px 0px 0px;
+	position: relative;
+    top: -21px;
+}
+
+.widget_tabs_background{
+	background-color: #FFFFFF;
+	border-bottom: #808080 3px solid;
+	
+}
+
+.widget_tabSelected{
+	Background: white;
+	color: black;
+	cursor: pointer;
+	font-weight: bold;	
+}
+.widget_tabSelected span{
+	color: black;
+	cursor:default;
+}
+
+.widget_tabFlash{
+    animation: blink .5s step-end infinite alternate;
+    -webkit-animation: blink .5s step-end infinite alternate;
+	
+}
+
+@-webkit-keyframes blink { 
+   50% { background-color: #ff0000; color: #FFFFFF;} 
+}
+@keyframes blink { 
+   50% { background-color: #ff0000; color: #FFFFFF;} 
+}
+
+
+.connection_DesignMode{
+	background-image: url('images/cc4webv2/cmdStartDesignMode.png');
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+}
+.connection_RefreshSession{
+	background-image: url('images/Connection/refresh.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+	
+}
+.connection_Help{
+	background-image: url('images/Connection/Help.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+	
+}
+.connection_About{
+	background-image: url('images/Connection/info.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+	
+}
+.connection_FinishSession{
+	background-image: url('/td/cc4web-resources/images/cc4webv2/cmdFinishSession.png') !important;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+}
+.connection_AddWidget{
+	background-image: url('images/Connection/AddWidget.png');
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+
+}
+.connection_SizePosition{
+	background-image: url('images/Connection/Save.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+
+}
+.connection_AddTabStrip{
+	background-image: url('images/Connection/AddTabs.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+
+}
+.connection_ConfigProperties{
+	background-image: url('images/Connection/Config.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+
+}
+.connection_EndDesignMode{
+	background-image: url('images/Connection/Cancel.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+
+}
+.connection_Dock{
+	background-image: url('images/Connection/Dock.png');
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+
+}
+.connection_EnterDebug{ 
+	background-image: url('images/Connection/Debug.png');	
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+}
+.connection_ExitDebug{
+	background-image: url('images/cc4webv2/cmdExitDebug.png');	
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+}
+
+
+.connection_status{
+	background-image: url('/td/cc4web-resources/images/cc4webv2/heartbeat-green-loop.gif');	
+	display: inline-block;	
+	height: 24px;
+	width: 24px;
+
+}
+
+.Broadcast_Management_Success_Key{
+	background-image: url('/td/cc4web-resources/images/greendot.png');
+	background-position: center;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.Broadcast_Management_Success_Indicator{
+	background-image: url('/td/cc4web-resources/images/greendot.png');
+	display: inline-block;
+}
+.Broadcast_Management_InProgress_Key{
+	background-image: url('/td/cc4web-resources/images/bluedot.png');
+	display: inline-block;
+	background-position: center;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.Broadcast_Management_InProgress_Indicator{
+	background-image: url('/td/cc4web-resources/images/bluedot.png');
+	display: inline-block;	
+}
+
+.Broadcast_Management_Retry_Key{
+	background-image: url('/td/cc4web-resources/images/yellowdot.png');
+	display: inline-block;
+	background-position: center;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	
+}
+.Broadcast_Management_Retry_Indicator{
+	background-image: url('/td/cc4web-resources/images/yellowdot.png');
+	display: inline-block;
+}
+
+.Broadcast_Management_Failed_Key{
+	background-image: url('/td/cc4web-resources/images/reddot.png');
+	display: inline-block;
+	background-position: center;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+
+}
+.Broadcast_Management_Failed_Indicator{
+	background-image: url('/td/cc4web-resources/images/reddot.png');
+	display: inline-block;
+}
+
+.Broadcast_Management_Untouched_Key{
+	background-image: url('/td/cc4web-resources/images/greydot.png');
+	display: inline-block;
+	background-position: center;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.Broadcast_Management_Untouched_Indicator{
+	background-image: url('/td/cc4web-resources/images/greydot.png');
+	display: inline-block;
+}
+
+.Broadcast_Management_Other_Key{
+	background-image: url('/td/cc4web-resources/images/transparent.png');
+	display: inline-block;
+	background-position: center;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+.Broadcast_Management_Other_Indicator{
+	background-image: url('/td/cc4web-resources/images/greydot.png');
+	display: inline-block;
+}
+
+.CurrentCall_AnswerCall_Disabled{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/Phone_green_disabled.png");
+	height:30px;
+	width: 60px;
+	background-size:60px;
+	background-repeat:no-repeat;
+	
+}
+
+.CurrentCall_AnswerCall_Enabled{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/Phone_green_shad.png");
+	height:30px;
+	width: 60px;
+	background-size:60px;
+	background-repeat:no-repeat;
+	
+}
+.currentCall_Timer{
+	font-weight:bold;
+}
+.currentCall_SuggestionsListBody{
+	
+}
+.currentCall_suggestionListHeading{
+	color: green;
+	font-weight:bold;
+}
+.currentCall_SuggestionListOpIN:before{
+	color: green;
+	content: "[ IN ]";
+	font-weight:bold;
+}
+.currentCall_SuggestionListOpOut:before{
+	color: red;
+	content: "[OUT]";
+	font-weight: bold;
+}
+.currentCall_SuggestionListOffset{
+	position:relative; 
+	left:0px; 
+	top:0px; 
+	width:300px; 
+	height:273px; 
+	overflow-x: hidden; 
+	overflow-y:scroll;
+	
+}
+
+.CurrentCall_TerminateCall{
+	display:inline-block;	
+	background-image: url("/td/cc4web-resources/images/buttons/Phone_red_shad.png");
+	height: 27px;
+	width: 60px;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 60px;	
+	margin: 0 auto;
+
+}
+.CurrentCall_Keypad_Button{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/btnKeypad.png");
+	height: 28px;
+	width: 28px;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 28px;	
+	margin: 0 auto;
+
+}
+
+.currentCall_recordingDisabled{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/recordingBlank_disabled.png");
+	height: 70px;
+	width: 70px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70px, 70px;
+}
+.currentCall_RecordingSuspended{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/cmdSuspendRecording.png");
+	height: 70px;
+	width: 70px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70px, 70px;	
+}
+.currentCall_Record{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/cmdRecord.png");	
+	height: 70px;
+	width: 70px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70px, 70px;	
+}
+
+.currentCall_MuteIcon{
+	background-image: url("/td/i/sound_mute.png");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 16px;
+	height: 16px;
+	width: 16px;
+}
+
+
+.CurrentCall_IA_Call{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/cmdIACall.png");
+	height: 21px;
+	width: 50px;	
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 50px;	
+    background-size: 50px;
+
+}
+.CurrentCall_Terminate_IA_Call{
+	display:inline-block;
+	background-image: url("/td/cc4web-resources/images/buttons/cmdCancelIA.png");
+	height: 21px;
+	width: 21px;	
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 21px;	
+	
+}
+
+.CaseCount_StatsCell{
+}
+
+.CaseCount_StatsCell_Label{
+}
+
+.CaseCount_StatsCell_Metric{
+}
+
+.CaseCount_StatsCell_TopSpacer{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	height: 10px;
+	visibility:hidden;
+}
+
+.CaseCount_StatsCell_BottomSpacer{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	height: 10px;
+	visibility:hidden;
+}
+
+.CaseCount_StatsCell_CentreSpacer{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	height: 4px;
+	visibility:hidden;
+}
+
+/*cleardown buttons, copied from langstat*/
+
+.btn.btn-red.btn-red-cleardown {
+     padding: 6px 15px;
+     height: 20px;
+     cursor: pointer;
+     font-size: 12px;
+     font-weight: normal;
+     transition-duration: 0.5s;
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     border: 1px solid;
+     display: inline;
+     border-radius: 2px;
+    /* color: #ffffff;
+     background-color: #c20000;
+     border-color: #e00404;*/
+     
+     -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
+     -moz-box-shadow:0 4px 4px rgba(0,0,0,.1);
+          box-shadow:0 4px 4px rgba(0,0,0,.1);
+          background:  #e00404;
+    background: -webkit-gradient(linear, 0 0, 0 0, from( #e00404), to(#c20000));
+    background: -moz-linear-gradient( #e00404, #c20000);
+    background: linear-gradient( #e00404, #c20000);
+    border-color: #e00404;
+    border-top: 1px solid #EA2E2E;
+    color: rgba(255,255,255,.9);
+}
+
+.btn.btn-red.btn-red-cleardown:hover {
+     -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn.btn-red.btn-red-cleardown:active {
+    background: #c20000;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#c20000), to(#e00404));
+    background: -moz-linear-gradient(#c20000, #e00404);
+    background: linear-gradient(#c20000, #e00404); 
+}
+    
+
+
+.btn.btn-green.btn-green-cleardown {
+     padding: 6px 15px;
+     height: 20px;
+     cursor: pointer;
+     font-size: 12px;
+     font-weight: normal;
+     transition-duration: 0.5s;
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     border: 1px solid;
+     display: inline;
+     border-radius: 2px;
+     /*color: #ffffff;
+     background-color: #8bc465;
+     border-color: #9ee071;*/
+     -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
+     -moz-box-shadow:0 4px 4px rgba(0,0,0,.1);
+          box-shadow:0 4px 4px rgba(0,0,0,.1);
+          background:  #9ee071;
+    background: -webkit-gradient(linear, 0 0, 0 0, from( #9ee071), to(#8bc465));
+    background: -moz-linear-gradient( #9ee071, #8bc465);
+    background: linear-gradient( #9ee071, #8bc465);
+    border-color: #9ee071;
+    border-top: 1px solid #ABE584;
+    color: rgba(255,255,255,.9);
+}
+
+.btn.btn-green.btn-green-cleardown:hover {
+     -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+     -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn.btn-green.btn-green-cleardown:active {
+    background: #8bc465;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#8bc465), to(#9ee071));
+    background: -moz-linear-gradient(#8bc465, #9ee071);
+    background: linear-gradient(#8bc465, #9ee071); 
+}
+
+.cleardown-prompt{
+    position:absolute;
+    top:0px;
+    left:50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translate(-50%,0%);
+    transform: translate(-50%,0%);
+    z-index:99;
+    width: 540px;
+    text-align: center;
+    display: none;
+    border-top: 30px solid #F9BF00;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif !important;
+
+}
+
+.cleardown-inner{
+   position: relative;
+   top: -26px;
+}
+
+.image-cleardown-left{
+	background:url(/td/cc4web-resources/images/icons/warningicon-langstat.png) no-repeat center left;
+	display: inline;
+	height: 17px;
+	width: 25px;
+	padding-left: 25px;
+}
+
+.cleardown-message{
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 12px;
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px
+	height: 17px;
+}
+
+.cleardown-countdown{
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 12px;
+	padding-right: 10px;
+	height: 17px;
+	display: inline;
+}
+
+.cleardown-buttons{
+	
+	height: 17px;
+	display: inline;
+}
+
+.image-cleardown-right{
+	background:url(/td/cc4web-resources/images/icons/infoicon-langstat.jpg) no-repeat center right;
+	display: inline;
+	height: 17px;
+	width: 25px;
+	padding-left: 25px;
+	padding-top: 0px;
 }
